@@ -84,11 +84,11 @@ SELECT SQL_CALC_FOUND_ROWS *  FROM (
 	) tbl
 	#WHERE
 	#custom  LIKE '%skills%' AND  custom LIKE '%about%' AND  custom LIKE '%talent_platform%'
-	#WHERE custom REGEXP 'skills|talent_platform'
-	#AND ".$id."
-	#AND ".$city."
-	#AND ".$proff."
-	#AND ".$skills."
+	WHERE custom REGEXP 'skills|talent_platform'
+	AND ".$id."
+	AND ".$city."
+	AND ".$proff."
+	AND ".$skills."
 	ORDER BY id DESC
 	LIMIT ".$offset.",".$limit;
 
